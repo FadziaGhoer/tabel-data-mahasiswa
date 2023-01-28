@@ -1,12 +1,13 @@
 import React from "react";
+import { FilteringTable } from "./components/FilteringTable";
+import { RowSelection } from "./components/RowSelection";
 // import './App.css'
-import { BasicTable } from "./components/BasicTable";
 
 function App() {
 
   return (
     <div className="App">
-      <BasicTable />
+      <RowSelection />
     </div>
   );
 }

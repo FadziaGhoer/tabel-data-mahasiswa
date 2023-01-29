@@ -322,7 +322,9 @@
         "tanggal_lahir": "08/01/1983",
         "nim": "4164066",
         "tanggal_masuk": "13/04/2016",
-        "mata_kuliah": []
+        "mata_kuliah": [
+            "Statistika Bisnis"
+        ]
     },
     {
         "id": 18,

@@ -1,5 +1,4 @@
 import React from "react";
-import { FilteringTable } from "./components/FilteringTable";
 import { RowSelection } from "./components/RowSelection";
 // import './App.css'
 

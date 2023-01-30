@@ -1,12 +1,11 @@
 import React from "react";
-import { RowSelection } from "./components/RowSelection";
-// import './App.css'
+import "./App.css";
+import Table from "./components/Table";
 
 function App() {
-
   return (
-    <div className="App">
-      <RowSelection />
+    <div className="app-container">
+      <Table />
     </div>
   );
 }

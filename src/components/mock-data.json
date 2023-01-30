@@ -1,0 +1,406 @@
+[
+    {
+        "id": 1,
+        "nama": "Gabriel Akbar Simanjuntak",
+        "kelas": 2,
+        "ip": 4,
+        "ipk": 4,
+        "jurusan": "LB",
+        "umur": 47,
+        "asal": "Medan",
+        "tanggal_lahir": "08/08/2017",
+        "nim": "4164050",
+        "tanggal_masuk": "01/11/2013",
+        "mata_kuliah": [
+            "Manajemen",
+            "Akuntansi",
+            "Ekspor & Impor",
+            "Statistika Bisnis",
+            "Metode Penelitian",
+            "Manajemen Keuangan"
+        ]
+    },
+    {
+        "id": 2,
+        "nama": "Bagus Nur Rahmat",
+        "kelas": 3,
+        "ip": 4,
+        "ipk": 4,
+        "jurusan": "EC",
+        "umur": 40,
+        "asal": "Probolinggo",
+        "tanggal_lahir": "26/12/1988",
+        "nim": "4164051",
+        "tanggal_masuk": "24/10/2011",
+        "mata_kuliah": [
+            "Manajemen",
+            "Akuntansi",
+            "Ekspor & Impor",
+            "Statistika Bisnis",
+            "Metode Penelitian"
+        ]
+    },
+    {
+        "id": 3,
+        "nama": "Hot Junaedi Simanjuntak",
+        "kelas": 1,
+        "ip": 3,
+        "ipk": 3,
+        "jurusan": "EC",
+        "umur": 19,
+        "asal": "Medan",
+        "tanggal_lahir": "14/05/1977",
+        "nim": "4164052",
+        "tanggal_masuk": "22/02/2020",
+        "mata_kuliah": [
+            "Manajemen",
+            "Akuntansi",
+            "Ekspor & Impor",
+            "Statistika Bisnis",
+            "Metode Penelitian"
+        ]
+    },
+    {
+        "id": 4,
+        "nama": "Ilham Ramadhani Mahmud",
+        "kelas": 3,
+        "ip": 2,
+        "ipk": 2,
+        "jurusan": "TI",
+        "umur": 44,
+        "asal": "Depok",
+        "tanggal_lahir": "27/04/2013",
+        "nim": "4164053",
+        "tanggal_masuk": "06/03/2011",
+        "mata_kuliah": [
+            "Manajemen"
+        ]
+    },
+    {
+        "id": 5,
+        "nama": "Hari Santoso",
+        "kelas": 1,
+        "ip": 1,
+        "ipk": 2,
+        "jurusan": "LB",
+        "umur": 35,
+        "asal": "Bandung",
+        "tanggal_lahir": "04/05/2015",
+        "nim": "4164054",
+        "tanggal_masuk": "08/08/2016",
+        "mata_kuliah": [
+            "Manajemen",
+            "Akuntansi",
+            "Ekspor & Impor"
+        ]
+    },
+    {
+        "id": 6,
+        "nama": "Jefri Mahili",
+        "kelas": 1,
+        "ip": 2,
+        "ipk": 4,
+        "jurusan": "TI",
+        "umur": 47,
+        "asal": "Padang",
+        "tanggal_lahir": "10/07/2012",
+        "nim": "4164055",
+        "tanggal_masuk": "02/04/2014",
+        "mata_kuliah": [
+            "Manajemen",
+            "Akuntansi",
+            "Ekspor & Impor",
+            "Statistika Bisnis",
+            "Metode Penelitian",
+            "Manajemen Keuangan"
+        ]
+    },
+    {
+        "id": 7,
+        "nama": "Muni Ledia",
+        "kelas": 3,
+        "ip": 1,
+        "ipk": 2,
+        "jurusan": "EC",
+        "umur": 26,
+        "asal": "Bandung",
+        "tanggal_lahir": "06/04/2014",
+        "nim": "4164056",
+        "tanggal_masuk": "12/12/2015",
+        "mata_kuliah": [
+            "Manajemen",
+            "Akuntansi",
+            "Ekspor & Impor",
+            "Statistika Bisnis"
+        ]
+    },
+    {
+        "id": 8,
+        "nama": "Novita Rahmayani",
+        "kelas": 2,
+        "ip": 3,
+        "ipk": 2,
+        "jurusan": "EC",
+        "umur": 39,
+        "asal": "Bengkulu",
+        "tanggal_lahir": "26/06/1985",
+        "nim": "4164057",
+        "tanggal_masuk": "02/06/2018",
+        "mata_kuliah": [
+            "Manajemen",
+            "Akuntansi",
+            "Ekspor & Impor",
+            "Statistika Bisnis",
+            "Metode Penelitian",
+            "Manajemen Keuangan"
+        ]
+    },
+    {
+        "id": 9,
+        "nama": "Nadia Ferida",
+        "kelas": 4,
+        "ip": 1,
+        "ipk": 4,
+        "jurusan": "AK",
+        "umur": 55,
+        "asal": "Padang",
+        "tanggal_lahir": "12/04/2009",
+        "nim": "4164058",
+        "tanggal_masuk": "26/01/2020",
+        "mata_kuliah": [
+            "Manajemen",
+            "Akuntansi",
+            "Ekspor & Impor"
+        ]
+    },
+    {
+        "id": 10,
+        "nama": "Siti Halimatus Sadiyah",
+        "kelas": 1,
+        "ip": 1,
+        "ipk": 1,
+        "jurusan": "MB",
+        "umur": 51,
+        "asal": "Bandung",
+        "tanggal_lahir": "31/12/1981",
+        "nim": "4164059",
+        "tanggal_masuk": "06/03/2018",
+        "mata_kuliah": [
+            "Manajemen",
+            "Akuntansi",
+            "Ekspor & Impor",
+            "Statistika Bisnis"
+        ]
+    },
+    {
+        "id": 11,
+        "nama": "Rizky Adlisa",
+        "kelas": 2,
+        "ip": 3,
+        "ipk": 3,
+        "jurusan": "LB",
+        "umur": 24,
+        "asal": "Padang Sidimpuan",
+        "tanggal_lahir": "31/05/1999",
+        "nim": "4164060",
+        "tanggal_masuk": "09/12/2020",
+        "mata_kuliah": [
+            "Manajemen",
+            "Akuntansi",
+            "Ekspor & Impor",
+            "Statistika Bisnis",
+            "Metode Penelitian"
+        ]
+    },
+    {
+        "id": 12,
+        "nama": "Fadzia Ghoer Munsyori",
+        "kelas": 2,
+        "ip": 4,
+        "ipk": 2,
+        "jurusan": "EC",
+        "umur": 58,
+        "asal": "Bandung",
+        "tanggal_lahir": "21/10/2011",
+        "nim": "4164061",
+        "tanggal_masuk": "01/08/2018",
+        "mata_kuliah": [
+            "Manajemen",
+            "Akuntansi",
+            "Ekspor & Impor",
+            "Statistika Bisnis",
+            "Metode Penelitian",
+            "Manajemen Keuangan"
+        ]
+    },
+    {
+        "id": 13,
+        "nama": "Siti Asiyah",
+        "kelas": 4,
+        "ip": 1,
+        "ipk": 3,
+        "jurusan": "MI",
+        "umur": 58,
+        "asal": "Padang Sidimpuan",
+        "tanggal_lahir": "09/03/1989",
+        "nim": "4164062",
+        "tanggal_masuk": "10/01/2016",
+        "mata_kuliah": [
+            "Manajemen",
+            "Akuntansi",
+            "Ekspor & Impor",
+            "Statistika Bisnis",
+            "Metode Penelitian"
+        ]
+    },
+    {
+        "id": 14,
+        "nama": "Cahyani Indriaseta",
+        "kelas": 4,
+        "ip": 1,
+        "ipk": 2,
+        "jurusan": "TI",
+        "umur": 18,
+        "asal": "Cimahi",
+        "tanggal_lahir": "14/08/2018",
+        "nim": "4164063",
+        "tanggal_masuk": "24/06/2017",
+        "mata_kuliah": [
+            "Manajemen",
+            "Akuntansi",
+            "Ekspor & Impor",
+            "Statistika Bisnis"
+        ]
+    },
+    {
+        "id": 15,
+        "nama": "Ade Abigail",
+        "kelas": 2,
+        "ip": 2,
+        "ipk": 4,
+        "jurusan": "MI",
+        "umur": 20,
+        "asal": "Medan",
+        "tanggal_lahir": "18/08/1992",
+        "nim": "4164064",
+        "tanggal_masuk": "23/04/2018",
+        "mata_kuliah": [
+            "Manajemen",
+            "Akuntansi",
+            "Ekspor & Impor"
+        ]
+    },
+    {
+        "id": 16,
+        "nama": "Suprano Saputra",
+        "kelas": 3,
+        "ip": 1,
+        "ipk": 4,
+        "jurusan": "MI",
+        "umur": 33,
+        "asal": "Bandung",
+        "tanggal_lahir": "24/10/1997",
+        "nim": "4164065",
+        "tanggal_masuk": "25/06/2011",
+        "mata_kuliah": [
+            "Manajemen",
+            "Akuntansi",
+            "Ekspor & Impor",
+            "Statistika Bisnis",
+            "Metode Penelitian"
+        ]
+    },
+    {
+        "id": 17,
+        "nama": "Revina Atika Permari",
+        "kelas": 3,
+        "ip": 1,
+        "ipk": 3,
+        "jurusan": "AK",
+        "umur": 55,
+        "asal": "Bandung",
+        "tanggal_lahir": "08/01/1983",
+        "nim": "4164066",
+        "tanggal_masuk": "13/04/2016",
+        "mata_kuliah": [
+            "Statistika Bisnis"
+        ]
+    },
+    {
+        "id": 18,
+        "nama": "Shanty El-Frida Simanjuntak",
+        "kelas": 3,
+        "ip": 2,
+        "ipk": 2,
+        "jurusan": "MB",
+        "umur": 31,
+        "asal": "Medan",
+        "tanggal_lahir": "28/04/2006",
+        "nim": "4164067",
+        "tanggal_masuk": "29/10/2015",
+        "mata_kuliah": [
+            "Manajemen",
+            "Akuntansi",
+            "Ekspor & Impor",
+            "Statistika Bisnis",
+            "Metode Penelitian",
+            "Manajemen Keuangan"
+        ]
+    },
+    {
+        "id": 19,
+        "nama": "Intan Sari",
+        "kelas": 3,
+        "ip": 3,
+        "ipk": 1,
+        "jurusan": "TI",
+        "umur": 47,
+        "asal": "Bandung",
+        "tanggal_lahir": "04/04/2012",
+        "nim": "4164067",
+        "tanggal_masuk": "25/06/2011",
+        "mata_kuliah": [
+            "Manajemen",
+            "Akuntansi",
+            "Ekspor & Impor",
+            "Statistika Bisnis",
+            "Metode Penelitian"
+        ]
+    },
+    {
+        "id": 20,
+        "nama": "Wildan Muhammad Aqso",
+        "kelas": 2,
+        "ip": 4,
+        "ipk": 1,
+        "jurusan": "TI",
+        "umur": 46,
+        "asal": "Bandung",
+        "tanggal_lahir": "01/03/1991",
+        "nim": "4164068",
+        "tanggal_masuk": "22/03/2011",
+        "mata_kuliah": [
+            "Manajemen",
+            "Akuntansi"
+        ]
+    },
+    {
+        "id": 21,
+        "nama": "Aditia Farhan",
+        "kelas": 3,
+        "ip": 3,
+        "ipk": 2,
+        "jurusan": "TI",
+        "umur": 28,
+        "asal": "Bandung",
+        "tanggal_lahir": "01/07/1995",
+        "nim": "4164069",
+        "tanggal_masuk": "22/04/2011",
+        "mata_kuliah": [
+            "Manajemen",
+            "Akuntansi",
+            "Ekspor & Impor",
+            "Statistika Bisnis"
+        ]
+    }
+]

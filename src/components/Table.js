@@ -3,6 +3,7 @@ import { nanoid } from "nanoid";
 import data from "./mock-data.json";
 import ReadOnlyRow from "./ReadOnlyRow";
 import EditableRow from "./EditableRow";
+import Modal from "./Modal";
 
 function Table() {
   const [contacts, setContacts] = useState(data);

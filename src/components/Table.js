@@ -3,10 +3,12 @@ import { nanoid } from "nanoid";
 import data from "./mock-data.json";
 import ReadOnlyRow from "./ReadOnlyRow";
 import EditableRow from "./EditableRow";
-import Modal from "./Modal";
 
 function Table() {
   const [contacts, setContacts] = useState(data);
+  const [query, setQuery] = useState("");
+  const keys = ["nama", "mata_kuliah", "tanggal_masuk"];
+
   const [addFormData, setAddFormData] = useState({
     nama: "",
     kelas: "",
@@ -115,15 +117,21 @@ function Table() {
   const handleDeleteClick = (contactId) => {
     const newContacts = [...contacts];
 
-    const index = contacts.findIndex((contact)=> contact.id === contactId);
+    const index = contacts.findIndex((contact) => contact.id === contactId);
 
     newContacts.splice(index, 1);
 
     setContacts(newContacts);
-  }
+  };
 
   return (
     <div>
+      <input
+        type="text"
+        placeholder="Search..."
+        className="search-box"
+        onChange={(e) => setQuery(e.target.value)}
+      />
       <form onSubmit={handleEditFormSubmit}>
         <table>
           <thead>
@@ -135,23 +143,33 @@ function Table() {
             </tr>
           </thead>
           <tbody>
-            {contacts.map((contact) => (
-              <Fragment>
-                {editContactId === contact.id ? (
-                  <EditableRow
-                    editFormData={editFormData}
-                    handleEditFormChange={handleEditFormChange}
-                    handleCancelClick={handleCancelClick}
-                  />
-                ) : (
-                  <ReadOnlyRow
-                    contact={contact}
-                    handleEditClick={handleEditClick}
-                    handleDeleteClick={handleDeleteClick}
-                  />
-                )}
-              </Fragment>
-            ))}
+            {contacts
+              .filter((contact) =>
+                keys.some((key) => {
+                  const value =
+                    typeof contact[key] === "string"
+                      ? contact[key].toLowerCase()
+                      : String(contact[key]).toLowerCase();
+                  return value.includes(query);
+                })
+              )
+              .map((contact) => (
+                <Fragment key={contact.id}>
+                  {editContactId === contact.id ? (
+                    <EditableRow
+                      editFormData={editFormData}
+                      handleEditFormChange={handleEditFormChange}
+                      handleCancelClick={handleCancelClick}
+                    />
+                  ) : (
+                    <ReadOnlyRow
+                      contact={contact}
+                      handleEditClick={handleEditClick}
+                      handleDeleteClick={handleDeleteClick}
+                    />
+                  )}
+                </Fragment>
+              ))}
           </tbody>
         </table>
       </form>

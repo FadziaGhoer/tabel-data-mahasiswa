@@ -2,10 +2,10 @@ import React from "react";
 import "./App.css";
 import Table from "./components/Table";
 
-function App() {
+function App(contact) {
   return (
     <div className="app-container">
-      <Table />
+      <Table key={contact.id}/>
     </div>
   );
 }

@@ -3,6 +3,8 @@ import { nanoid } from "nanoid";
 import data from "./mock-data.json";
 import ReadOnlyRow from "./ReadOnlyRow";
 import EditableRow from "./EditableRow";
+import AddForm from "./AddForm";
+import SelectForm from "./SelectForm";
 
 function Table() {
   const [contacts, setContacts] = useState(data);
@@ -126,13 +128,26 @@ function Table() {
 
   return (
     <div>
-      <input
-        type="text"
-        placeholder="Search..."
-        className="search-box"
-        onChange={(e) => setQuery(e.target.value)}
-      />
+      <div className="group-header">
+        <input
+          type="text"
+          placeholder="Cari Nama..."
+          className="search-box"
+          onChange={(e) => setQuery(e.target.value)}
+        />
+        <input
+          type="date"
+          placeholder="Cari Tanggal Masuk..."
+          className="search-box"
+          onChange={(e) => setQuery(e.target.value)}
+        />
+        <SelectForm />
+        <AddForm 
+        handleAddFormSubmit={handleAddFormSubmit}
+        handleAddFormChange={handleAddFormChange}/>
+      </div>
       <form onSubmit={handleEditFormSubmit}>
+        <hr />
         <table>
           <thead>
             <tr>
@@ -172,123 +187,6 @@ function Table() {
               ))}
           </tbody>
         </table>
-      </form>
-
-      <h2>Add a Contact</h2>
-      <form className="form1" action="" onSubmit={handleAddFormSubmit}>
-        <label htmlFor="nama" className="nama">
-          Nama
-        </label>
-        <input
-          type="text"
-          name="nama"
-          required="required"
-          placeholder="Masukan nama..."
-          onChange={handleAddFormChange}
-        />
-        <label htmlFor="kelas" className="kelas">
-          Kelas
-        </label>
-        <input
-          type="number"
-          name="kelas"
-          required="required"
-          placeholder="Masukan kelas (1, 2, 3, 4)"
-          onChange={handleAddFormChange}
-        />
-        <label htmlFor="ip" className="ip">
-          IP Semester
-        </label>
-        <input
-          type="number"
-          name="ip"
-          required="required"
-          placeholder="Masukan ip (1, 2, 3, 4)"
-          onChange={handleAddFormChange}
-        />
-        <label htmlFor="ipk" className="ipk">
-          IPK
-        </label>
-        <input
-          type="number"
-          name="ipk"
-          required="required"
-          placeholder="Masukan ipk (1, 2, 3, 4)"
-          onChange={handleAddFormChange}
-        />
-        <label htmlFor="jurusan" className="jurusan">
-          Jurusan
-        </label>
-        <input
-          type="text"
-          name="jurusan"
-          required="required"
-          placeholder="Masukan jurusan (MB, AK, LB, TI, MI, EC)"
-          onChange={handleAddFormChange}
-        />
-        <label htmlFor="umur" className="umur">
-          Umur
-        </label>
-        <input
-          type="number"
-          name="umur"
-          required="required"
-          placeholder="Masukan umur..."
-          onChange={handleAddFormChange}
-        />
-        <label htmlFor="asal" className="asal">
-          Asal Kota
-        </label>
-        <input
-          type="text"
-          name="asal"
-          required="required"
-          placeholder="Masukan asal kota..."
-          onChange={handleAddFormChange}
-        />
-        <label htmlFor="tanggal_lahir" className="tanggal_lahir">
-          Tanggal Lahir
-        </label>
-        <input
-          type="number"
-          name="tanggal_lahir"
-          required="required"
-          placeholder="Masukan tanggal lahir (01/06/1997)"
-          onChange={handleAddFormChange}
-        />
-        <label htmlFor="nim" className="nim">
-          NIM
-        </label>
-        <input
-          type="number"
-          name="nim"
-          required="required"
-          placeholder="Masukan nim (4164068)"
-          onChange={handleAddFormChange}
-        />
-        <label htmlFor="tanggal_masuk" className="tanggal_masuk">
-          Tanggal Masuk
-        </label>
-        <input
-          type="number"
-          name="tanggal_masuk"
-          required="required"
-          placeholder="Masukan tanggal masuk (01/04/2011)"
-          onChange={handleAddFormChange}
-        />
-        <label htmlFor="mata_kuliah" className="mata_kuliah">
-          Mata Kuliah
-        </label>
-        <input
-          type="text"
-          name="mata_kuliah"
-          required="required"
-          placeholder="Masukan mata kuliah..."
-          onChange={handleAddFormChange}
-        />
-        <button type="submit" className="btn-form">
-          Add
-        </button>
       </form>
     </div>
   );

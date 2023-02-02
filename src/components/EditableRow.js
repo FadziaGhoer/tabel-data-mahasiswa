@@ -1,5 +1,7 @@
 import React from "react";
 import "../App.css";
+import { AiTwotoneSave } from "react-icons/ai";
+import { MdCancel } from "react-icons/md";
 
 const EditableRow = ({
   editFormData,
@@ -40,14 +42,14 @@ const EditableRow = ({
       </td>
       <td>
         <button className="btn-save" type="submit">
-          Save
+          <AiTwotoneSave size='1.7rem'/>
         </button>
         <button
           className="btn-cancel"
           type="button"
           onClick={handleCancelClick}
         >
-          Cancel
+          <MdCancel size='1.7rem'/>
         </button>
       </td>
     </tr>

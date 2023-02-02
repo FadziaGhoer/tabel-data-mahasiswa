@@ -5,6 +5,55 @@
   padding: 1rem;
 }
 
+.group-header {
+  display: flex;
+  gap: 20px;
+}
+.search-box {
+  float: none;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  width: 20%;
+  border-radius: 10px;
+}
+.option {
+  margin-left: 10px;
+}
+.select-opt {
+  width: 100%;
+  height: 25px;
+  border-radius: 10px;
+  background-color: silver;
+  font-size: 17px;
+  text-align: center;
+}
+.btn-tm {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  width: 10%;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #9c9c9c;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 15px;
+}
+.btn-close2 {
+  background: none;
+  font-size: 30px;
+  color: grey;
+  border: none;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+hr {
+  border: 1px solid #ddd;
+}
+
 table {
   border-collapse: collapse;
   width: 100%;
@@ -12,32 +61,68 @@ table {
 
 th,
 td {
-  border: 1px solid #ffffff;
   text-align: left;
-  padding: 8px;
-  font-size: 32px;
+  padding: 5px;
 }
-
-th {
-  background-color: rgb(117, 201, 250);
-}
-
 td {
-  background-color: rgb(205, 235, 253);
+  border: 1px solid #ddd;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 
 .row-action {
   text-align: left;
-  width: 250px;
+  width: 150px;
 }
 
 .btn-edit,
-.btn-save,
-.btn-cancel,
 .btn-delete,
-.btn-details {
-  display: inline-block;
-  width: 110px;
+.btn-details,
+.btn-save,
+.btn-cancel {
+  background: none;
+  border: none;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+.modal-h4 {
+  font-size: 30px;
+  display: contents;
+}
+.btn-close {
+  background: none;
+  font-size: 30px;
+  color: grey;
+  border: none;
+}
+h1 {
+  font-size: 20px;
+}
+p {
+  border: 1px solid #ffffff;
+  text-align: left;
+  padding: 0px;
+  font-size: 17px;
+}
+.j {
+  margin-bottom: 0px;
+}
+.i {
+  margin-top: 0px;
+}
+.i1 {
+  display: table-caption;
+}
+.wrap-details-1 {
+  display: flex;
+}
+.wrap-detail-2 {
+  margin-right: 100px;
 }
 
 * {
@@ -81,19 +166,6 @@ input {
 }
 input:focus {
   outline: 3px solid gold;
-}
-
-p {
-  border: 1px solid #ffffff;
-  text-align: center;
-  padding: 0px;
-  font-size: 20px;
-}
-.search-box {
-  float: none;
-  padding: 10px;
-  font-size: 20px;
-  text-align: center;
 }
 
 @media (min-width: 400px) {

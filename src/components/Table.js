@@ -39,8 +39,14 @@ function Table() {
     const fieldName = event.target.getAttribute("name");
     const fieldValue = event.target.value;
 
-    const newFormData = { ...addFormData };
-    newFormData[fieldName] = fieldValue;
+    const checked = event.target.checked;
+
+    let newFormData = { ...addFormData };
+    if (checked) {
+      newFormData[fieldName] = [...(newFormData[fieldName] || []), fieldValue];
+    } else {
+      newFormData[fieldName] = fieldValue;
+    }
 
     setAddFormData(newFormData);
   };

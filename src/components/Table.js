@@ -86,7 +86,15 @@ function Table() {
       id: editContactId,
       nama: editFormData.nama,
       kelas: editFormData.kelas,
+      ip: editFormData.ip,
       ipk: editFormData.ipk,
+      jurusan: editFormData.jurusan,
+      umur: editFormData.umur,
+      asal: editFormData.asal,
+      tanggal_lahir: editFormData.tanggal_lahir,
+      nim: editFormData.nim,
+      tanggal_masuk: editFormData.tanggal_masuk,
+      mata_kuliah: editFormData.mata_kuliah,
     };
 
     const newContacts = [...contacts];
@@ -106,7 +114,15 @@ function Table() {
     const formValue = {
       nama: contact.nama,
       kelas: contact.kelas,
+      ip: contact.ip,
       ipk: contact.ipk,
+      jurusan: contact.jurusan,
+      umur: contact.umur,
+      asal: contact.asal,
+      tanggal_lahir: contact.tanggal_lahir,
+      nim: contact.nim,
+      tanggal_masuk: contact.tanggal_masuk,
+      mata_kuliah: contact.mata_kuliah,
     };
 
     setEditFormData(formValue);
@@ -142,9 +158,10 @@ function Table() {
           onChange={(e) => setQuery(e.target.value)}
         />
         <SelectForm />
-        <AddForm 
-        handleAddFormSubmit={handleAddFormSubmit}
-        handleAddFormChange={handleAddFormChange}/>
+        <AddForm
+          handleAddFormSubmit={handleAddFormSubmit}
+          handleAddFormChange={handleAddFormChange}
+        />
       </div>
       <form onSubmit={handleEditFormSubmit}>
         <hr />
